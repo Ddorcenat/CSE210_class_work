@@ -4,6 +4,6 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Welcome to CSE 210!");
+        Console.WriteLine("Hello world !");
     }
 }
