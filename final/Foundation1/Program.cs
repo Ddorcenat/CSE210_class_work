@@ -23,14 +23,15 @@ class Program
         Console.Write($"{firstName} select one teh option above: ");
         string option = Console.ReadLine();
 
-        int response = 0;
-        do
-        {
-        Display menu
-        respond = int.Parse(Console.ReadLine);
-            if (response = 1)
+        // int response = 0;
+        // do
+        // {
+        // Display menu
+        // respond = int.Parse(Console.ReadLine);
+        //     if (response = 1)
             
-        }
+        // }
+        
     }
 
 }
