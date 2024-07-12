@@ -14,24 +14,22 @@ class Program
         Console.Write("What is your last name? ");
         string lastName = Console.ReadLine();
         Console.WriteLine($"{firstName} make your selcection form the list below ");
-
-        Console.WriteLine("1, Wrtite a new entry");
-        Console.WriteLine("2, Dipslay the Journal ");
-        Console.WriteLine("Save the journal to a file");
-        Console.WriteLine("4, Load the journal from a file");
-        Console.WriteLine("5, Exit the program");
-        Console.Write($"{firstName} select one teh option above: ");
-        string option = Console.ReadLine();
-
-        // int response = 0;
-        // do
-        // {
-        // Display menu
-        // respond = int.Parse(Console.ReadLine);
-        //     if (response = 1)
-            
-        // }
         
+        JournalEntry journalEntry = new JournalEntry("Hello world ");
+        while (true)
+        {
+        Console.WriteLine("1, Wrtite an entry");
+        Console.WriteLine("2, Dipslay the Journal");
+        Console.WriteLine("3, Load the journal from a file");
+        Console.WriteLine("4, Save the journal to a file");
+        Console.WriteLine("5, Exit the program");
+        Console.WriteLine($"{firstName} select one the option above.");
+        string option = Console.ReadLine();
+        
+        Console.WriteLine(journalEntry.GetEntry());
+        
+        
+        }
     }
 
 }

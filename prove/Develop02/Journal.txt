@@ -1,0 +1,3 @@
+This will be the first line in the file.
+My favorite color is Blue
+What di dyou eat today?|I ate food |7/11/2024 6:35:57 PM
