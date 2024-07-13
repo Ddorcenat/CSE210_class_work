@@ -21,14 +21,14 @@ class Word
         _hidden = true;
     }
 
-    // This is a loggic, if the word is not hidden return 
+    // This is a loggic, if the word is not hidden return the word.
     public string GetWord()
     {
-        if (!_hidden)
+        if (!_hidden) // word not hidden so return word
         {
             return _word;
         }
-        else
+        else // word is hidden so return "_"
         {
             string hiddenword = "";
             for (int i = 0; i < _word.Count(); i++)
