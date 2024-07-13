@@ -21,17 +21,42 @@ public class Scripture
             _words.Add(tempWord);
         }
     }
+
+    private int RemainingWords()
+    {
+        int count = 0;
+
+        for (int i = 0; i < _words.Count(); i++)
+        {
+            if (!_words[i].IsHidden())
+            {
+                count ++;
+            }
+        }
+        return count;
+    }
     public bool HideWords()
     {
         Random random = new Random();
-        for (int i = 0; i < 3; i++)
+        int HideLimit = 3;
+        if (RemainingWords() < 3)
+        {
+            HideLimit = RemainingWords();
+        }
+        int j = 0;
+        while (j < HideLimit)
         {
             int index = random.Next(0, _words.Count());
-            _words[index].HideWord();
+            if (!_words[index].IsHidden())
+            {
+                _words[index].HideWord();
+                j++;
+            }
+
         }
         for (int i = 0; i < _words.Count(); i++)
         {
-            if(! _words[i].IsHidden())
+            if (!_words[i].IsHidden())
             {
                 return false;
             }
