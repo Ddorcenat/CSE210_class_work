@@ -8,6 +8,10 @@ class Word
         _word = word;
         _hidden = false;
     }
+    public bool IsHidden()
+    {
+        return _hidden;
+    }
     public void HideWord()
     {
         _hidden = true;
