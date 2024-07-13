@@ -22,6 +22,7 @@ public class Scripture
         }
     }
 
+// COUNTS The number of remaining unhidden words 
     private int RemainingWords()
     {
         int count = 0;
@@ -35,7 +36,22 @@ public class Scripture
         }
         return count;
     }
-    public bool HideWords()
+
+// This will tell us if all the words are hidden
+    public bool AllWordsHidden()
+    {
+        for (int i = 0; i < _words.Count(); i++)
+        {
+            if (!_words[i].IsHidden())
+            {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    // This is going to hide up to three words while the progam is running.
+        public void HideWords()
     {
         Random random = new Random();
         int HideLimit = 3;
@@ -54,15 +70,9 @@ public class Scripture
             }
 
         }
-        for (int i = 0; i < _words.Count(); i++)
-        {
-            if (!_words[i].IsHidden())
-            {
-                return false;
-            }
-        }
-        return true;
+        
     }
+    // This will display the scripture and the reference on the screen
     public void ShowScripture()
     {
         Console.Write($"{_reference.GetScriptureReference()}: ");

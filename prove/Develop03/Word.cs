@@ -1,13 +1,17 @@
 class Word
 {
     private string _word;
+    // it's call flag, if true the word is hidden
     private bool _hidden;
 
+    // This is small constructor 
     public Word(string word)
     {
         _word = word;
         _hidden = false;
     }
+
+    // This is a method that hide the word and tell if it's hidden
     public bool IsHidden()
     {
         return _hidden;
@@ -16,6 +20,8 @@ class Word
     {
         _hidden = true;
     }
+
+    // This is a loggic, if the word is not hidden return 
     public string GetWord()
     {
         if (!_hidden)
