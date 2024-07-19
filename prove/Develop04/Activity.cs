@@ -8,7 +8,7 @@ class Activity
 {
     protected string _title;
     protected string _desc;
-    protected int _time;
+    protected double _time;
     string[] _spinner = { "|", "\\", "-", "/" };
 
     public Activity(string title, string descrip)
@@ -22,6 +22,7 @@ class Activity
         Console.WriteLine($"{_title} : {_desc}");
         Console.WriteLine("How long do you want to do the activity?");
         _time = Int32.Parse(Console.ReadLine()); //To store the infromation as number 
+        Console.Clear();
         Console.Write("Get ready....");
         spinner(); // "()" indicate that we are callong a method
     }

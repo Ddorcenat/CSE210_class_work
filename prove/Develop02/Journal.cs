@@ -15,6 +15,7 @@ class Journal
 
     // this is call Array [] the purpose is
     private string[] _prompt = { "How was your day?", "Did you meet anyone interesting today?", "What did you like about your day?", "What did you eat today?" };
+    // This is connected to the next method. 
     public Journal()// constructor method 
     {
 
@@ -23,7 +24,7 @@ class Journal
     public string getRandomPrompt()
     {
         // making a new instance so we call the new method call next. 
-        Random generator = new Random();
+        Random generator = new Random(); // Generator is the instance of teh random class 
         //  Next is a method that return an interger, randomnum become a interger that we can use as an index. 
         int randomnum = generator.Next(0, _prompt.Length);
 

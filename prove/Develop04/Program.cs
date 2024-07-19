@@ -11,7 +11,7 @@ class Program
 
         while (option != "4")
         {
-            Console.WriteLine("Hello Develop04 World!");
+            Console.Clear();
             Console.WriteLine("Today we are going to practice a couple activities together");
             Console.WriteLine(" 1 Start the breathing activity");
             Console.WriteLine(" 2 Start the listing activity");
@@ -24,12 +24,13 @@ class Program
             {
                 Breathing breath = new Breathing();
                 breath.intro();
-                breath.timeactivity();
+                breath.TimeActivity();
             }
             else if (option == "2")
             {
                 Listing list = new Listing();
                 list.intro();
+                list.TimeActivity();
             }
             // The class doesn't have an intenses does. 
             else if (option == "3")
