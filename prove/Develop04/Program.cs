@@ -35,7 +35,7 @@ class Program
             // The class doesn't have an intenses does. 
             else if (option == "3")
             {
-                Reflecting reflec = new Reflecting();
+                Reflection reflec = new Reflection();
                 reflec.intro();
             }
 
