@@ -37,6 +37,7 @@ class Program
             {
                 Reflection reflec = new Reflection();
                 reflec.intro();
+                reflec.TimeActivity();
             }
 
         }

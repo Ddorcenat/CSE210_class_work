@@ -1,3 +1,4 @@
+using System.Security.Cryptography;
 using System.Security.Cryptography.X509Certificates;
 using System.Threading.Tasks.Dataflow;
 
@@ -11,7 +12,7 @@ class Reflection : Activity
         "Think of a time when you helped someone in need.",
         "Think of a time when you did something truly selfless."
     };
-    private string[] _questionprompt= 
+    private string[] _questionprompt =
     {
         "Why was this experience meaningful to you?",
         "Have you ever done anything like this before?",
@@ -26,41 +27,50 @@ class Reflection : Activity
     public Reflection() : base("Reflecting activity", "Reflecting desc") { }
     private void RandomPrompt()
     {
-            Random randomgenerator = new Random(); 
-            int random = randomgenerator.Next(0, _promtps.Length); // Veriable first letter should be in lowercase.
-            // Since the next method is expectiong an "int" AKA interger, I can not use _promt because it's an array but when I add .lenght it become and interger
-            Console.WriteLine(_promtps[random]);
-            // prompts in this case is an Variable type Array or just an Array, meanwhile Random is teh index that represent the prompt that's going to be display.
+        Random randomgenerator = new Random();
+        int random = randomgenerator.Next(0, _promtps.Length); // Veriable first letter should be in lowercase.
+                                                               // Since the next method is expectiong an "int" AKA interger, I can not use _promt because it's an array but when I add .lenght it become and interger
+        Console.WriteLine($"--- {_promtps[random]} ---");
+        // prompts in this case is an Variable type Array or just an Array, meanwhile Random is teh index that represent the prompt that's going to be display.
     }
-
-    public void TimeActivity() 
+    private void RandomQuest()
     {
-        int totalanswers = 0;
-
-        Console.WriteLine(" List as many response you cna to the following prompt. ");
-        RandomPrompt();
-        Console.WriteLine(" You acan start after .....");
+        Random randomquestgenerator = new Random();
+        int random = randomquestgenerator.Next(0, _questionprompt.Length);
+        Console.WriteLine($"-- {_questionprompt[random]} --");
+    }
+    public void TimeActivity()
+    {
         
-        for (int i = 4; i > 0; i--)
-        {
-            Console.Write(i);
-            Thread.Sleep(1000); 
-            Console.Write("\b");
-        }
+        Console.Write("Welcome to the reflection Activity");
+        Console.Write("");
+        Console.WriteLine(@" This activity will help you reflect on times in your life when you have shown strength and resilience. 
+        This will help you recognize the power you have and how you can use it in other aspects of your life. ");
+        RandomPrompt();
+        Console.WriteLine(" Pressenter once you you're ready to write");
+        Console.ReadLine();
 
         DateTime endtime = DateTime.Now.AddSeconds(_time);
-        // Console.WriteLine(endtime);
-        while(DateTime.Now <= endtime)
+        while (DateTime.Now < endtime)
         {
-            Console.WriteLine("> ");
-            Console.ReadLine();
+            RandomQuest();
+            for (int i = 4; i > 0; i--)
+            {
+                Console.Write(i);
+                Thread.Sleep(1000);
+                Console.Write("\b");
+            }
+
+            // DateTime endtime = DateTime.Now.AddSeconds(_time);
+            // Console.WriteLine(endtime);
             
-            totalanswers+= 1; // or could be totalanswers++; 
             
+                Console.WriteLine("> ");
+                Console.ReadLine();
+
+            
+            // Thread.Sleep(2000);
         }
-        Console.WriteLine($"You answered {totalanswers} times");
-        Thread.Sleep(2000);
-        
     }
 
 }

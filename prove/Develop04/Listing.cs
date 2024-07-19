@@ -28,9 +28,9 @@ class Listing : Activity
     {
         int totalanswers = 0;
 
-        Console.WriteLine(" List as many response you cna to the following prompt. ");
+        Console.WriteLine(" List as many response you can to the following prompt. ");
         RandomPrompt();
-        Console.WriteLine(" You acan start after .....");
+        Console.WriteLine("You acan start after .....");
         
         for (int i = 4; i > 0; i--)
         {
