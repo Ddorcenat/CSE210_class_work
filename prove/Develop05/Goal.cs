@@ -1,10 +1,11 @@
 using System.ComponentModel;
 using System.Diagnostics.Contracts;
+using System.Globalization;
 using System.Net;
 using System.Security.Cryptography.X509Certificates;
 using System.Xml;
 
-class Goal
+abstract class Goal
 {
     string _name;
     string _description;
@@ -21,7 +22,7 @@ class Goal
         _goalType = base.ToString();
     }
 
-    Goal()
+    public Goal()
     {
         _name = "";
         _description = "";
@@ -39,7 +40,24 @@ class Goal
         }
         return $"[{statusMarker}] {_goalType} {_name}: {_description}";
     }
-    // public abstract int RecordEvent();
+    public void SetName()
+    {
+        Console.WriteLine("What is the name of your goal? "); // Methods for the programs 
+        _name = Console.ReadLine();
+    }
+    public void SetDescription()
+    {
+        Console.WriteLine($"What is your short description for {_name}? ");
+        _description = Console.ReadLine();
+    }
+    public void SetPoints()
+    {
+        Console.WriteLine($"How much you do you wich to set for {_name}? ");
+        _numberOfPoints = int.Parse(Console.ReadLine());
+    }
+    public abstract int RecordEvent();
+    public abstract void RunGoal();
+
 
     // public string GetName()
     // {
