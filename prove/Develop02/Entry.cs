@@ -20,7 +20,7 @@ public class Entry
         _date = DateTime.Now;
     }
 
-    // this a methid
+    // this is a method
     public void DisplayEntry()
     {
         Console.WriteLine($"{_prompt}, {_userinput} {_date}");
