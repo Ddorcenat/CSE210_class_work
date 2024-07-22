@@ -1,12 +1,14 @@
 using System;
 using System.Diagnostics.Contracts;
 using System.Formats.Asn1;
+using System.Reflection.Metadata;
 
 class Program
 {
     static void Main(string[] args)
     {
         Menu menu = new Menu();
+        Goals goals = new Goals();
         int option = 0;
         Console.WriteLine("Welcom to the Eternal quest program");
         while (option != 6)
@@ -17,11 +19,15 @@ class Program
             switch (option)
             {
                 case 1:
-                Goal goal = new Goal("Christ","come follow me", 100, false);
-                Console.WriteLine(goal.ToString());
-                Console.ReadLine();
+                    Goal goal = new Goal("Christ", "come follow me", 100, false);
+                    goals.AddGoal(goal);
+                    // Console.WriteLine(goal.ToString());
+                    // Console.ReadLine();
                     break;
                 case 2:
+                    goals.DisplayGoals();
+                    Console.WriteLine("Press enter to continue");
+                    Console.ReadLine();
                     break;
                 case 3:
                     break;

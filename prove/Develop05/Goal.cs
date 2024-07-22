@@ -1,3 +1,4 @@
+using System.ComponentModel;
 using System.Diagnostics.Contracts;
 using System.Net;
 using System.Security.Cryptography.X509Certificates;
@@ -38,6 +39,8 @@ class Goal
         }
         return $"[{statusMarker}] {_goalType} {_name}: {_description}";
     }
+    // public abstract int RecordEvent();
+
     // public string GetName()
     // {
 
