@@ -5,7 +5,6 @@ class Menu
         int option = 0;
         while (option < 1 || option > 6)
         {
-            Console.WriteLine("Here the total point display");
             Console.Write("");
             Console.Write("");
             Console.WriteLine("Menu Option: ");
