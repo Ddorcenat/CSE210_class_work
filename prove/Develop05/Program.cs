@@ -17,6 +17,9 @@ class Program
             switch (option)
             {
                 case 1:
+                Goal goal = new Goal("Christ","come follow me", 100, false);
+                Console.WriteLine(goal.ToString());
+                Console.ReadLine();
                     break;
                 case 2:
                     break;
