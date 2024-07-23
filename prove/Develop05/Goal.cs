@@ -41,7 +41,7 @@ abstract class Goal
         {
             statusMarker = "X";
         }
-        return $"[{statusMarker}] {_goalType} {_name}: {_description}";
+        return $"[{statusMarker}] Type: {_goalType} Name: {_name} Description: {_description}";
     }
 
     public virtual string FileSystemString()

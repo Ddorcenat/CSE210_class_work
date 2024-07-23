@@ -19,13 +19,19 @@ class Program
             switch (option)
             {
                 case 1:
-                    // Goal goal = new Goal("Christ", "come follow me", 100, false);
-                    // goals.AddGoal(goal);
-                    // Console.WriteLine(goal.ToString());
-                    // Console.ReadLine();
-                    Simple simple = new Simple();
-                    simple.RunGoal();
-                    goals.AddGoal(simple);
+                    int goalChoice = menu.DisplayGoalMenu();
+                    if (goalChoice == 1)
+                    {
+                        Simple simple = new Simple();
+                        simple.RunGoal();
+                        goals.AddGoal(simple);
+                    }
+                    else if (goalChoice == 3)
+                    {
+                        Eternal eternal = new Eternal();
+                        eternal.RunGoal();
+                        goals.AddGoal(eternal);
+                    }
                     break;
                 case 2:
                     goals.DisplayGoals();

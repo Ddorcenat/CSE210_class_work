@@ -64,6 +64,12 @@ class Goals
                         Simple simple = new Simple(name, description, numberOfPoints, status);
                         _goals.Add(simple);
                     }
+                    else if (items[0] == "Eternal")
+                    {
+                        int completion = int.Parse(items[5]);
+                        Eternal eternal = new Eternal(name, description, numberOfPoints, status, completion);
+                        _goals.Add(eternal);
+                    }
                 }
 
             }
@@ -76,7 +82,7 @@ class Goals
         Console.WriteLine("What file name do you wish to use? ");
         string FileName = Console.ReadLine();
         StreamWriter streamWriter = new StreamWriter(FileName);
-        streamWriter.WriteLine($"Score#{_totalscore+99}");
+        streamWriter.WriteLine($"Score#{_totalscore}");
         foreach(Goal goal in _goals)
         {
             streamWriter.WriteLine(goal.FileSystemString());
