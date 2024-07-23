@@ -1,7 +1,9 @@
 using System.ComponentModel;
 using System.Diagnostics.Contracts;
+using System.Drawing;
 using System.Globalization;
 using System.Net;
+using System.Reflection.Metadata.Ecma335;
 using System.Security.Cryptography.X509Certificates;
 using System.Xml;
 
@@ -54,6 +56,15 @@ abstract class Goal
     {
         Console.WriteLine($"How much you do you wich to set for {_name}? ");
         _numberOfPoints = int.Parse(Console.ReadLine());
+    }
+    public int GetPoint()
+    {
+        return _numberOfPoints; 
+    }
+    public int MarkComplete()
+    {
+        _status = true;
+        return _numberOfPoints;
     }
     public abstract int RecordEvent();
     public abstract void RunGoal();

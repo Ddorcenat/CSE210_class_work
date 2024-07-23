@@ -17,6 +17,6 @@ class Simple : Goal
     }
     public override int RecordEvent()
     {
-        return 0;
+        return MarkComplete();
     }
 }

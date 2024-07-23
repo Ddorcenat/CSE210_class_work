@@ -14,7 +14,7 @@ class Program
         while (option != 6)
         {
             Console.Clear();
-            Console.WriteLine("Here the total point display");
+            goals.DisplayScore();
             option = menu.DisplayMenu();
             switch (option)
             {
@@ -37,6 +37,7 @@ class Program
                 case 4:
                     break;
                 case 5:
+                    goals.RecordEvent();
                     break;
                 case 6:
                     break;
