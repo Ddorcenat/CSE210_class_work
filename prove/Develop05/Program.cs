@@ -26,6 +26,12 @@ class Program
                         simple.RunGoal();
                         goals.AddGoal(simple);
                     }
+                    else if(goalChoice == 2)
+                    {
+                        CheckList checkList = new CheckList();
+                        checkList.RunGoal();
+                        goals.AddGoal(checkList);
+                    }
                     else if (goalChoice == 3)
                     {
                         Eternal eternal = new Eternal();

@@ -70,6 +70,15 @@ class Goals
                         Eternal eternal = new Eternal(name, description, numberOfPoints, status, completion);
                         _goals.Add(eternal);
                     }
+                    else if (items[0] == "CheckList")
+                    {
+                        int completion = int.Parse(items[5]);
+                        int maxattemps = int.Parse(items[6]);
+                        int bonuspoints = int.Parse(items[7]);
+                        CheckList checkList = new CheckList(name, description, numberOfPoints, status, completion, maxattemps, bonuspoints);
+                        _goals.Add(checkList);
+
+                    }
                 }
 
             }
