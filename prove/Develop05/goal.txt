@@ -1,0 +1,4 @@
+Score#248
+Simple#Bed time#sleep at 1 pm tonight#True#50
+Simple#D&C #Read finish reading D&C on July the 29th#False#75
+Simple#Cleaning check#Pass cleaning at the aapartment#False#75

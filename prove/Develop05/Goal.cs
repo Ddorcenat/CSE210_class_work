@@ -30,7 +30,8 @@ abstract class Goal
         _description = "";
         _numberOfPoints = 0;
         _status = false;
-        _goalType = "";
+        _goalType = base.ToString();
+        
     }
 
     public override string ToString()
@@ -41,6 +42,11 @@ abstract class Goal
             statusMarker = "X";
         }
         return $"[{statusMarker}] {_goalType} {_name}: {_description}";
+    }
+
+    public virtual string FileSystemString()
+    {
+        return $"{_goalType}#{_name}#{_description}#{_status}#{_numberOfPoints}";
     }
     public void SetName()
     {

@@ -33,8 +33,11 @@ class Program
                     Console.ReadLine();
                     break;
                 case 3:
+                    goals.SaveGoal();
+
                     break;
                 case 4:
+                    goals.LoadGoals();
                     break;
                 case 5:
                     goals.RecordEvent();
