@@ -1,0 +1,26 @@
+Alice#Female#22#Cat#None#None#Business
+Bob#Male#24#Dog#Pollen#None#Business
+Charlie#Non-binary#20#Fish#Peanuts#None#Computer Science
+David#Male#23#None#None#Visual Impairment#Computer Science
+Eva#Female#21#Bird#Dust#None#Business
+Frank#Male#25#Cat#None#None#Business
+Grace#Female#22#Dog#Latex#None#Psycology
+Hannah#Female#20#Rabbi#None#None#Psycology
+Isaac#Male#24#None#Shellfish#None#Psycology
+Jack#Male#21#Hamster#Pollen#None#Physics 
+Katie#Female#19#None#Gluten#None#Physics 
+Liam#Male#23#Dog#None#Hearing Impairment#MATH
+Mia#Female#22#Cat#Peanuts#None#MATH
+Noah#Male#25#Fish#None#None#MATH
+Olivia#Female#24#Dog#Dust#None#MATH
+Paul#Male#20#None#Pollen#None#MATH
+Quinn #Non-binary#21#Bird#Latex#None#Nursing
+Rachel#Female#23#Hamster#None#None#Nursing
+Sam#Male#22#None#Shellfish#None#Nursing
+Tina#Female#24#Rabbit#Gluten#None#Nursing
+Uma#Female#19#Cat#Pollen#None#Business
+Victor#Male#21#Dog#None#Visual Impairment#Communication
+Wendy#Female#25#None#Dust#None#Communication
+Xander#Male#22#Bird#None#None#Communication
+Yara#Female#20#Fish#Peanuts#None#Construction
+Zach#Male#23#Dog#Pollen#None#Construction
