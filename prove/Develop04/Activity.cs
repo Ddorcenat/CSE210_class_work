@@ -26,7 +26,7 @@ class Activity
         Console.Write("Get ready....");
         spinner(); // "()" indicate that we are callong a method
     }
-    public void spinner()
+    public void spinner() // This is a method
     {
         for (int i = 0; i < 3; i++)
         {

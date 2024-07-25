@@ -1,6 +1,7 @@
 using System.Data.Common;
 using System.Formats.Asn1;
 using System.Reflection.Metadata;
+using System.Reflection.Metadata.Ecma335;
 using System.Runtime.CompilerServices;
 using System.Threading.Channels;
 
@@ -41,5 +42,12 @@ class Student
     {
         Console.WriteLine($"{_name} {_gender} {_age} {_allergy} {_petOwner} {_major} {_handicap}");
     }
-
+    public string GetGender()
+    {
+        return _gender;
+    }
+    public string GetName()
+    {
+        return _name;
+    }
 }
