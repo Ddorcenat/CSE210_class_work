@@ -4,17 +4,17 @@ Charlie#Non-binary#20#Fish#Peanuts#None#Computer Science
 David#Male#23#None#None#Visual Impairment#Computer Science
 Eva#Female#21#Bird#Dust#None#Business
 Frank#Male#25#Cat#None#None#Business
-Grace#Female#22#Dog#Latex#None#Psycology
-Hannah#Female#20#Rabbi#None#None#Psycology
-Isaac#Male#24#None#Shellfish#None#Psycology
-Jack#Male#21#Hamster#Pollen#None#Physics 
-Katie#Female#19#None#Gluten#None#Physics 
-Liam#Male#23#Dog#None#Hearing Impairment#MATH
-Mia#Female#22#Cat#Peanuts#None#MATH
-Noah#Male#25#Fish#None#None#MATH
-Olivia#Female#24#Dog#Dust#None#MATH
-Paul#Male#20#None#Pollen#None#MATH
-Quinn #Non-binary#21#Bird#Latex#None#Nursing
+Grace#Female#22#Dog#Latex#None#Psychology
+Hannah#Female#20#Rabbit#None#None#Psychology
+Isaac#Male#24#None#Shellfish#None#Psychology
+Jack#Male#21#Hamster#Pollen#None#Physics
+Katie#Female#19#None#Gluten#None#Physics
+Liam#Male#23#Dog#None#Hearing Impairment#Math
+Mia#Female#22#Cat#Peanuts#None#Math
+Noah#Male#25#Fish#None#None#Math
+Olivia#Female#24#Dog#Dust#None#Math
+Paul#Male#20#None#Pollen#None#Math
+Quinn#Non-binary#21#Bird#Latex#None#Nursing
 Rachel#Female#23#Hamster#None#None#Nursing
 Sam#Male#22#None#Shellfish#None#Nursing
 Tina#Female#24#Rabbit#Gluten#None#Nursing
@@ -24,3 +24,18 @@ Wendy#Female#25#None#Dust#None#Communication
 Xander#Male#22#Bird#None#None#Communication
 Yara#Female#20#Fish#Peanuts#None#Construction
 Zach#Male#23#Dog#Pollen#None#Construction
+Amy#Female#22#Cat#None#None#Engineering
+Brian#Male#24#Dog#Pollen#None#Engineering
+Clara#Female#20#Fish#Peanuts#None#Law
+Derek#Male#23#None#None#Hearing Impairment#Law
+Ella#Female#21#Bird#Dust#None#Medicine
+Finn#Male#25#Cat#None#None#Medicine
+Gina#Female#22#Dog#Latex#None#Architecture
+Henry#Male#20#Rabbit#None#None#Architecture
+Ivy#Female#24#None#Shellfish#None#Philosophy
+James#Male#21#Hamster#Pollen#None#Philosophy
+Kara#Female#19#None#Gluten#None#Philosophy
+Luke#Male#23#Dog#None#Visual Impairment#History
+Maya#Female#22#Cat#Peanuts#None#History
+Nate#Male#25#Fish#None#None#History
+Opal#Female#24#Dog#Dust#None#History

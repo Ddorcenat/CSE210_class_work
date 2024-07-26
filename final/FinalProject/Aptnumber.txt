@@ -1,5 +1,5 @@
 101#3#Female#No Pet#Disability
-102#3#Male,#Pets Allowed#None
+102#3#Male#Pets Allowed#None
 103#3#Female#Pets Allowed#Disability
 104#3#Male#No Pets#None
 105#3#Female#Pets Allowed#None
@@ -18,3 +18,5 @@
 118#3#Male#Pets Allowed#None
 119#3#Female#No Pets#None
 120#3#Male#Pets Allowed#Disability
+121#3#Male#No Pets#None    // New empty apartment
+122#3#Female#No Pets#Disability    // New empty apartment

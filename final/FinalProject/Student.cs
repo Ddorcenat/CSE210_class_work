@@ -50,4 +50,13 @@ class Student
     {
         return _name;
     }
+
+    public bool IsDisabled()
+    {
+        return _handicap;
+    }
+    public bool IsOwnerOwnPet()
+    {
+        return _petOwner;
+    }
 }

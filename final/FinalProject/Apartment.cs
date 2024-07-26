@@ -28,7 +28,7 @@ class Apartment
             _maleOrFemale = true;
         }
         _petAllow = false;
-        if (unit[3] != "No Pet")
+        if (unit[3] != "No")
         {
             _petAllow = true;
         }
@@ -40,15 +40,34 @@ class Apartment
         _numberofoccupants = 0;
         // Console.WriteLine($"{_unitnum} {_maxNumbeofoccupants} {_maleOrFemale} {_petAllow} {_disability}");
     }
-    public void DisplayApartment()
+    // public void DisplayApartment()
+    // {
+    //     Console.WriteLine($" This is the Apartment number: {_unitnum}");
+    //     int count = 1;
+    //     foreach(string occupant in _occupantNames)
+    //     {
+    //         Console.WriteLine($"{count++} {occupant}");
+    //     }
+    // }
+
+public void DisplayApartment()// New code after 10Pm
+{
+    Console.WriteLine($"This is the Apartment number: {_unitnum}");
+    if (IsEmpty())
     {
-        Console.WriteLine($" This is the Apartment number: {_unitnum}");
+        Console.WriteLine("No occupants.");
+    }
+    else
+    {
         int count = 1;
-        foreach(string occupant in _occupantNames)
+        foreach (string occupant in _occupantNames)
         {
             Console.WriteLine($"{count++} {occupant}");
         }
     }
+}
+
+    
     // Need a method to check for avaibility 
     public bool Fullapartment() // Logic was required her becasue it had to make a decision 
     {
@@ -77,5 +96,9 @@ class Apartment
     {
         _occupantNames.Add(name);
         _numberofoccupants++;
+    }
+    public bool IsEmpty()
+    {
+        return _occupantNames.Count == 0;
     }
 }

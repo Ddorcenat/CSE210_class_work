@@ -1,5 +1,6 @@
 using System;
 using System.Diagnostics;
+using System.Runtime.InteropServices;
 
 class Program
 {
@@ -39,20 +40,28 @@ class Program
             {
                 if (apartment.IsGenderFeOrMa() == IsMAleStudent)
                 {
-                    if (!apartment.Fullapartment())
+                    if (apartment.IaDisableFriendly() == student.IsDisabled())
                     {
-                        apartment.AddPersonToAprt(student.GetName());
-                        break;
+                        if (apartment.IsPetAllow() == student.IsOwnerOwnPet())
+                        {
+                            if (!apartment.Fullapartment())
+                            {
+                                apartment.AddPersonToAprt(student.GetName());
+                                break;
+                            }
+                        }
                     }
                 }
-
             }
         }
+        
         foreach (Apartment apartment in apartments)
         {
             apartment.DisplayApartment();
         }
     }
+
+    
     static void Main(string[] args)
     {
         List<Student> students = new List<Student> { };// student text files 
