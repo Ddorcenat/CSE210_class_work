@@ -62,10 +62,10 @@ class Program
             Student student = new Student(line);
             students.Add(student);
         }
-        foreach (Student student in students)
-        {
-            student.Dispplay();
-        }
+        // foreach (Student student in students)
+        // {
+        //     student.Dispplay();
+        // }
         List<Apartment> apartments = new List<Apartment> { };//apartment text file 
         string[] placement = ReadaptFile();
         foreach (string line in placement)
